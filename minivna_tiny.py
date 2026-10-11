@@ -12,6 +12,7 @@ reverse-engineered (not vendor-documented) by:
 
 See the README's Protocol section for the summary. This file is a clean-room
 reimplementation from the recovered protocol facts, not a copy of either reference.
+
 Wire protocol summary
 ----------------------
 - 921600 baud, 8 data bits, 1 stop bit, no parity.
