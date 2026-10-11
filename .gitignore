@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# user-specific runtime data, not source -- lives next to the program
+# (dev copy or packaged .exe) per gui_app.py's _app_dir()/SETTINGS_PATH
+settings.json
+
+# PyInstaller build output
+build/
+*.spec

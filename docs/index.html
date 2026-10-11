@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>miniVNA Tiny - replacement driver and control program</title>
+<link rel="icon" href="favicon.png">
+<style>
+:root{--bg:#14181d;--panel:#1a2027;--edge:#3a414c;--text:#eef3f8;--dim:#a7b3c0;--acc:#6cb6ff;--good:#57e39a}
+@media (prefers-color-scheme: light){:root{--bg:#eef2f5;--panel:#fff;--edge:#c3ced8;--text:#15232d;--dim:#566673;--acc:#0b7fa6;--good:#0f8a3a}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 'Segoe UI',system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:2.4rem;letter-spacing:.18em;margin:.2em 0 0;color:var(--acc);font-weight:900}
+.sub{color:var(--dim);margin:0 0 1.2em}
+.btn{display:inline-block;background:var(--acc);color:#04121c;padding:.7em 1.3em;border-radius:8px;font-weight:700;text-decoration:none;margin:.3em .4em .3em 0}
+.btn.alt{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+img{max-width:100%;border:1px solid var(--edge);border-radius:8px;margin:.6em 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:14px 16px}
+h2{margin-top:1.8em;border-bottom:1px solid var(--edge);padding-bottom:.2em}
+small,.dim{color:var(--dim)}
+</style></head><body><main>
+<h1>MINIVNA TINY</h1>
+<p class="sub">An independent replacement driver and control program for the mRS miniVNA Tiny.</p>
+<a class="btn" href="https://github.com/lrizio/MiniVNATiny/releases/latest">Download for Windows</a>
+<a class="btn alt" href="https://github.com/lrizio/MiniVNATiny">Source on GitHub</a>
+<img src="main.png" alt="miniVNA Tiny showing a Smith chart, return loss and SWR with a marker (simulated data)">
+<p class="dim"><small>Simulated data.</small></p>
+
+<h2>What it does</h2>
+<div class="grid">
+<div class="card"><b>Sweep and calibrate</b><br>Reflection (S11) and transmission (S21) sweeps from 1 MHz to 1.5 GHz, continuous sweep, averaging and smoothing, Open/Short/Load and thru calibration.</div>
+<div class="card"><b>See it your way</b><br>Smith chart, return loss, SWR and S21 plots, band overlays, manual scales, and four markers with Z, Q, Y, mismatch loss and group delay.</div>
+<div class="card"><b>TDR</b><br>Distance-to-fault from a reflection sweep, with velocity factor and a one-click wide-band sweep for short cables.</div>
+<div class="card"><b>Portable</b><br>One exe, no installer. Settings, calibration and window position live in a file beside it, so it runs from a USB stick. Export Touchstone and CSV.</div>
+</div>
+
+<h2>Download and use</h2>
+<p>Download the zip from <a href="https://github.com/lrizio/MiniVNATiny/releases/latest">Releases</a>, unzip it anywhere and run <b>miniVNA Tiny.exe</b>. Nothing is installed and the program only looks on GitHub for a newer release (one small request, switch off with the tick box in the top bar). The User Guide PDF is in the zip. The exe is unsigned, so Windows SmartScreen may ask you to confirm.</p>
+
+<h2>Please note</h2>
+<p class="dim">Independent and unofficial; no affiliation with the device's maker. Measurements are only as good as your calibration. No warranty, not for safety-critical use. See the <a href="https://github.com/lrizio/MiniVNATiny/blob/main/DISCLAIMER.md">full disclaimer</a>. MIT licence. 73 de VK3EI.</p>
+</main></body></html>
